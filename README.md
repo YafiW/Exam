@@ -3,3 +3,6 @@ This is a python application which gets images and creates a PDF file in a folde
 
 ## Build command
     docker build -t your_image_name .
+
+## To run the image
+    docker run -v $PWD/images:/app/images -v $PWD/output:/app/output my-python-image images
